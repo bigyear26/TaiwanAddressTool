@@ -2,38 +2,78 @@
 <html>
 <head lang="en">
 	<meta charset="UTF-8">
-	<title></title>
+	<title>轉經緯度小工具</title>
+	<link href="css/screen.css" type="text/css" rel="stylesheet">
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+
 </head>
 
 
 <body>
-<h1>輸入地址批次轉換經緯度 經緯度分開的小工具</h1>
-<p>1. 請輸入地址，一行就輸入一個地址</p>
-<p>
-	<textarea rows="9" name="S1" cols="67" id="source">台北市信義區市府路1號</textarea>
-</p>
-<p>2. 請選擇輸出要不要加入地址? <input type="checkbox" id="c" name="c" value="ON">加上</p>
-<p>3. 點選
-	<button type="button" class="btn btn-success" onclick="trans()">轉經度</button>
-	<button type="button" class="btn btn-success" onclick="trans1()">轉緯度</button>
-</p>
-<p>4. 地址轉換經度 (longitude) 結果如下</p>
-<p>
-	<textarea rows="9" name="S2" cols="67" id="target"></textarea>
-</p>
+
+<div class="container">
+
+	<div class="row">
+		<div class="col-lg-6 col-lg-offset-3">
+			<h3>輸入地址批次轉換經緯度 經緯度分開的小工具</h3>
+			<hr/>
+		</div>
+	</div>
 
 
-<p>4. 地址轉換緯度 (latitude) 結果如下</p>
-<p>
-	<textarea rows="9" name="S2" cols="67" id="target1"></textarea>
-</p>
-<p>
-	本工具由 <a href="http://uhooamber.com/">李小淮前輩</a> 開發，因為臨時需要單獨的轉換，故參考他的程式碼作出單獨分開的轉換工具。
-</p>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-<script src="function.js"></script>
+
+		<div class="row">
+		<div class="col-lg-6">
+			<p>1. 請輸入地址，一行就輸入一個地址</p>
+			<p>
+				<textarea name="S1" id="source">台北市信義區市府路1號</textarea>
+			</p>
+			<p>2. 請選擇輸出要不要加入地址?  <input type="checkbox" id="c" name="c" value="ON">加上</p>
+			<p>3. 點選
+				<button type="button" class="btn " onclick="trans()">轉經度</button>
+				<button type="button" class="btn " onclick="trans1()">轉緯度</button>
+			</p>
+		</div>
+
+
+		<div class="col-lg-6">
+			<div>
+				<p>4. 地址轉換經度 (longitude) 結果如下</p>
+				<p>
+					<textarea name="S2" id="target"></textarea>
+				</p>
+			</div>
+
+			<div>
+				<p>5. 地址轉換緯度 (latitude) 結果如下</p>
+				<p>
+					<textarea name="S2" id="target1"></textarea>
+				</p>
+			</div>
+
+		</div>
+
+
+
+		<div class="col-lg-6 col-lg-offset-3">
+			<hr/>
+			<p>
+				本工具由 <a href="http://uhooamber.com/">李小淮前輩</a> 開發，因為臨時需要單獨的轉換，故參考他的程式碼作出單獨分開的轉換工具使用一下，真的非常謝謝他！
+			</p>
+		</div>
+
+
+	</div>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	<script src="min/function-min.js"></script>
+
+</div>
+
 
 </body>
 </html>
