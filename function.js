@@ -53,7 +53,7 @@ function addressToLatLng(addr) {
     }, function (results, status) {
         if ($("#c").attr('checked'))
         {
-            addr = addr + "=";
+            addr = addr + ",";
         }
         else {
             addr = "";
@@ -74,7 +74,7 @@ function addressToLatLng1(addr) {
     }, function (results, status) {
         if ($("#c").attr('checked'))
         {
-            addr = addr + "=";
+            addr = addr + ",";
         }
         else {
             addr = "";
