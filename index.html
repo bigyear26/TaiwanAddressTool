@@ -6,22 +6,7 @@
 	<link href="css/screen.css" type="text/css" rel="stylesheet">
 	<link href="css/style.css" type="text/css" rel="stylesheet">
 
-	<!-- Facebook Pixel Code -->
-	<script>
-		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-				n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-			n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-			t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-				document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-		fbq('init', '1388814041439014');
-		fbq('track', "PageView");
-		fbq('track', 'Purchase', {value: '50.00', currency:'USD'});
-	</script>
-	<noscript><img height="1" width="1" style="display:none"
-	               src="https://www.facebook.com/tr?id=1388814041439014&ev=PageView&noscript=1"
-			/></noscript>
-	<!-- End Facebook Pixel Code -->
 
 </head>
 <body>
@@ -38,6 +23,7 @@
 		<div class="col-lg-6">
 			</br>
 			<h4>1. 請輸入地址，一行就輸入一個地址</h4>
+				<input id="htest" type="text" value="請輸入來玩玩看ajax"></input>
 				<textarea name="S1" id="source">台北市信義區市府路1號</textarea>
 			<h4>2. 請選擇輸出要不要加入地址? &nbsp <input type="checkbox" id="c" name="c" value="ON">&nbsp&nbsp加上</h4>
 			<h4>3. 點選&nbsp
@@ -46,7 +32,11 @@
 				<button type="button" class="btn " onclick="trans1()">轉緯度</button>
 			</h4>
 		</div>
+<script>
 
+	document.getElementById('htest').oninput=function(){}
+
+</script>
 
 		<div class="col-lg-6">
 			</br>
