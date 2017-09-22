@@ -6,11 +6,6 @@
  * Created by HarryYang on 16/4/1.
  */
 
-
-const one = document.querySelectorAll("b1");
-
-alert(one.innerHTML);
-
 var i;
 var split;
 
